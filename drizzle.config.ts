@@ -6,7 +6,7 @@ export default {
   schema: "./src/server/db/schema.ts",
   dialect: "singlestore",
   dbCredentials: {
-    host: console.log({ host: env.SINGLESTORE_HOST }) ?? env.SINGLESTORE_HOST,
+    host: env.SINGLESTORE_HOST,
     port: parseInt(env.SINGLESTORE_PORT),
     user: env.SINGLESTORE_USER,
     password: env.SINGLESTORE_PASS,
